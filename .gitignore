@@ -1,0 +1,6 @@
+
+.idea/
+
+dist/
+
+django_fastsettings.egg-info/

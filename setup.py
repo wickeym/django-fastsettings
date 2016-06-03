@@ -15,7 +15,7 @@ setup(
     license='Apache 2.0 License',  # example license
     description='A simple Django app to store/access project wide persistent settings.',
     long_description=README,
-    url='https://www.michaeljwickey.com/',
+    url='https://github.com/wickeym/django-fastsettings',
     author='Michael Wickey',
     author_email='wickeym@gmail.com',
     classifiers=[

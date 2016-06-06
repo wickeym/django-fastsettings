@@ -5,6 +5,12 @@ FastSettings
 Django FastSettings stores settings in the database and syncs it to redis, so that access is "fast". 
 This will work without redis, it will simply fetch from the database each time.
 
+Install
+-----------
+
+pip install django-fastsettings
+
+
 Quick start
 -----------
 

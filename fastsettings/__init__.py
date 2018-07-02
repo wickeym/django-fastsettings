@@ -1,1 +1,1 @@
-import projectsettings
+from . import projectsettings

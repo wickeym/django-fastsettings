@@ -59,7 +59,7 @@ def get_values(thesetting):
 
 def get_from_settings_db(settingname, defaultval=None, the_logger=logger):
     ret_val = None
-    import fastsettings.models as models
+    from . import models
     try:
         settings_name = "{0}_PROJECT_SETTINGS".format(get_from_settings_file("APP_NAME", ""))
         redis_settings_server = get_redis_connection()

@@ -1,8 +1,8 @@
 # FastSettings
 
 :Version: 0.4
-:Download: https://pypi.org/project/django-fastsettings
-:Source: https://github.com/wickeym/django-fastsettings
+:Download: <https://pypi.org/project/django-fastsettings>
+:Source: <https://github.com/wickeym/django-fastsettings>
 :Keywords: django, redis, database, settings, fastsettings
 
 Django FastSettings stores settings in the database and syncs it to redis, so that access is "fast". This will work without redis, it will simply fetch from the database each time.
@@ -32,4 +32,4 @@ Django FastSettings stores settings in the database and syncs it to redis, so th
 
 * Run `python manage.py migrate` to create the fastsettings models.
 
-* Start the development server and visit http://127.0.0.1:8000/admin/ to create a fastsetting (you'll need the Admin app enabled).
+* Start the development server and visit <http://127.0.0.1:8000/admin/> to create a fastsetting (you'll need the Admin app enabled).

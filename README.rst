@@ -1,6 +1,6 @@
 # FastSettings
 
-:Version: 0.4
+:Version: 0.5
 :Download: <https://pypi.org/project/django-fastsettings>
 :Source: <https://github.com/wickeym/django-fastsettings>
 :Keywords: django, redis, database, settings, fastsettings

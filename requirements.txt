@@ -1,2 +1,4 @@
-Django>=1.9.6
-redis>=2.10.5
+Django==2.2.5
+pytz==2019.2
+redis==3.3.8
+sqlparse==0.3.0

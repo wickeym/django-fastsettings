@@ -33,8 +33,7 @@ def get_redis_connection():
 
 def get_from_settings_file(settingname, defaultval=None, the_logger=logger):
     try:
-        ret_val = getattr(settings, settingname, None)
-        if(ret_val is None):
+        if((ret_val := getattr(settings, settingname, None)) is None):
             ret_val = defaultval
             the_logger.warning("Setting:{0} not found in settings.py, used default:{1}".format(settingname, defaultval))
     except Exception as e:
@@ -61,8 +60,7 @@ def get_from_settings_db(settingname, defaultval=None, the_logger=logger):
     from . import models
     try:
         settings_name = "{0}_PROJECT_SETTINGS".format(get_from_settings_file("APP_NAME", ""))
-        redis_settings_server = get_redis_connection()
-        if(redis_settings_server is not None):
+        if((redis_settings_server := get_redis_connection()) is not None):
             ret_val = redis_settings_server.hget(settings_name, settingname)
         if(ret_val is None):
             the_setting = models.Settings.objects.get(name=settingname)

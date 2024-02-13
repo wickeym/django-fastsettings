@@ -44,8 +44,7 @@ class Settings(models.Model):
 # ==================================== #
 @receiver(post_save, sender=Settings)
 def on_settings_save(sender, **kwargs):
-    settingobj = kwargs.get('instance', None)
-    if (settingobj is not None):
+    if ((settingobj := kwargs.get('instance', None)) is not None):
         the_setting = None
         try:
             # Update setting entry

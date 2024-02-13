@@ -6,7 +6,6 @@ The settings may be in cache or db, to provide a single get/set, this module wil
 @author: michael wickey
 Created on Jul 9, 2014
 """
-from __future__ import unicode_literals
 from django.conf import settings
 import json
 import redis

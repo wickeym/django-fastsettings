@@ -23,7 +23,7 @@ DATABASES = {
 SECRET_KEY = 'u($kbs9$irs0)436gbo9%!b&#zyd&70tx!n7!i&fl6qun@z1_l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
